@@ -1,7 +1,9 @@
 FROM node:20-alpine
 WORKDIR /app
 
-# Copy pre-built server with pre-installed node_modules
+COPY .medusa/server/package*.json ./
+RUN npm ci --omit=dev
+
 COPY .medusa/server/ .
 
 EXPOSE 9000
