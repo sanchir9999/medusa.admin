@@ -17,6 +17,7 @@ type CloudinaryOptions = {
 };
 
 export class CloudinaryFileService implements IFileProvider {
+  static identifier = "cloudinary";
   protected options_: CloudinaryOptions;
 
   constructor({ }, options: CloudinaryOptions) {
