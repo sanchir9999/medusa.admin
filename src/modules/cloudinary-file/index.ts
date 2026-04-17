@@ -93,6 +93,4 @@ export class CloudinaryFileService implements IFileProvider {
   }
 }
 
-export default CloudinaryFileService;
-
 export const services = [CloudinaryFileService];
